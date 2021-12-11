@@ -1,0 +1,28 @@
+From 37ab65bb99e3aca4fc1ea87f41c121c85767bac8 Mon Sep 17 00:00:00 2001
+From: Ammar Faizi <ammarfaizi2@gmail.com>
+Date: Sat, 11 Dec 2021 12:33:53 +0700
+Subject: [PATCH 0/5] *** SUBJECT HERE ***
+
+*** BLURB HERE ***
+
+Ammar Faizi (5):
+  render_frame_host_impl.h: Make `bool CanExecuteJavaScript()` be public
+  render_frame_host_impl.{cc,h}: Add `ExecuteJavaScriptFX(std::string
+    code)`
+  base: Create `JSPreloadFrameHost` class
+  content_main.cc: Initialize JSPreloadFrameHost globally
+  render_thread_impl.cc: Register preloaded JS as extension
+
+ base/js_preload_frame_host.h                  | 97 +++++++++++++++++++
+ content/app/content_main.cc                   |  7 ++
+ .../renderer_host/render_frame_host_impl.cc   | 61 ++++++++++++
+ .../renderer_host/render_frame_host_impl.h    | 16 ++-
+ content/renderer/render_thread_impl.cc        |  7 ++
+ 5 files changed, 183 insertions(+), 5 deletions(-)
+ create mode 100644 base/js_preload_frame_host.h
+
+
+base-commit: 51596eab97360072521c8145c4f734b70c176884 ("IWYU: add cstring for memset in blink::WebPrivatePtr")
+-- 
+2.32.0
+
