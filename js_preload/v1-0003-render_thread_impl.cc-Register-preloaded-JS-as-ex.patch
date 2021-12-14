@@ -1,7 +1,8 @@
-From 37ab65bb99e3aca4fc1ea87f41c121c85767bac8 Mon Sep 17 00:00:00 2001
+From 99895cf5098242d0fba7035e7024c5446a401f0b Mon Sep 17 00:00:00 2001
 From: Ammar Faizi <ammarfaizi2@gmail.com>
 Date: Sat, 11 Dec 2021 11:48:24 +0700
-Subject: [PATCH 5/5] render_thread_impl.cc: Register preloaded JS as extension
+Subject: [PATCH v1 3/5] render_thread_impl.cc: Register preloaded JS as
+ extension
 
 At this point, we register the preloaded JavaScript that lives in
 `::g_js_preload` as a v8 extension.
